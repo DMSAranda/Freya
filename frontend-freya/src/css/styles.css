@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal{
+    background-color: #0a58ca;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog {
+    margin-top: 5%;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    background-color: #0a58ca;
+    width: 100%;
+    height: 100%;
+}
+
+/*  ESCRITORIO, TABLET   */
+@media only screen and (min-width: 1000px){
+    
+    .modal-out{
+        background-color: #0a58ca;
+        display: flex;
+        justify-content: center;    
+        width:100vw;
+        height:100vh; 
+    }
+    
+    .modal-in{
+        align-self: center;
+        display: flex;
+        justify-content: center;  
+        width: 80%;
+        height: 40%;
+    }
+    
+    .button-dep{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        border-radius: 10%;
+        width: 30%;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size:   2.5vw;
+    } 
+}
+
+
+/*  MOVIL   */
+@media only screen and (max-width: 1000px){
+    
+    .modal-out{
+        background-color: #0a58ca;
+        display: flex;
+        justify-content: center;    
+        width:100vw;
+        height:100vh; 
+    }
+    
+    .modal-in{
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        width: 70%;
+        height: 80%;
+    }
+    
+    .button-dep{
+        border-radius: 10%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        height: 33%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-size:   8vw;
+    } 
+}
+
+
+.abrir-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+ 
+.animacion {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+ 
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+ 
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+ 
+    to {
+        opacity: 1
+    }
+}
+ 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+ 
+    to {
+        opacity: 1
+    }
+}
+
+
+.emerger{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
